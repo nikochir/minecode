@@ -1,0 +1,46 @@
+#main#
+name: minecode
+main: nikochir.MineCode
+version: ${project.version}
+api-version: 1.16
+#work#
+load: STARTUP
+loadbefore: []
+database: false
+commands:
+  open_guis:
+    alias: ["guis", "e"]
+    usage: /<command>
+    #permission: minecode.access
+    permission-message: you do not have /<permission>
+    description:
+      open main server gui window
+permissions:
+  minecode.*:
+    default: true
+    children:
+      #
+    description:
+      #
+  minecode.forbid:
+    default: true
+    children:
+      minecode.*: false
+    description:
+      #
+  minecode.access:
+    children:
+    default: false
+    children:
+      minecode.*: false
+      minecode.forbid: true
+    description:
+      #
+#info#
+prefix: mc
+author: nikodim_cheer
+authors: [ nikodim_cheer ]
+website: "https://github.com/nikochir/minecode"
+description:
+  assembly of plugins and libraries
+#end_of_file#
