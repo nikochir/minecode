@@ -1,42 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- -->
+<!-- required: <project, modelVersion, groupId, artifactId, version> -->
 <project
   xmlns="http://maven.apache.org/POM/4.0.0"
   xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
   http://maven.apache.org/xsd/maven-4.0.0.xsd"
 >
+  <!--  -->
   <modelVersion>4.0.0</modelVersion>
-  <!-- -->
+  <!-- project properties -->
   <groupId>nikochir</groupId>
   <artifactId>minecode</artifactId>
   <version>1.0.0</version>
   <packaging>jar</packaging>
-  <!-- -->
   <name>minecode</name>
-  <!-- -->
   <url>http://github.com/nikochir/minecode</url>
-  <!-- -->
   <properties>
     <java.version>1.8</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
   <!-- -->
   <repositories>
+    <repository>
+      <id>nikochir</id>
+      <url>https://github.com/nikochir/minecode</url>
+      <name>repomain</name>
+      <layout>default</layout>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
     <!-- -->
     <repository>
       <id>papermc-repo</id>
       <url>https://papermc.io/repo/repository/maven-public/</url>
     </repository>
-    <!-- mongo api -->
-    <repository>
-      <id>sonatype</id>
-      <url>https://oss.sonatype.org/content/groups/public/</url>
-    </repository>
     <!-- -->
     <repository>
-        <id>gitlab-maven</id>
-        <url>https://gitlab.com/api/v4/projects/26894501/packages/maven</url>
+      <id>gitlab-maven</id>
+      <url>https://gitlab.com/api/v4/projects/26894501/packages/maven</url>
     </repository>
   </repositories>
   <!-- -->
@@ -57,32 +60,44 @@
       <groupId>com.destroystokyo.paper</groupId>
       <artifactId>paper-api</artifactId>
       <version>1.16.5-R0.1-SNAPSHOT</version>
+      <type>jar</type>
       <scope>provided</scope>
+      <!--systemPath>f:/work/minecode/</systemPath-->
+      <optional>false</optional>
     </dependency>
     <!-- -->
     <dependency>
-      <groupId>nikochir.mineguis</groupId>
-      <artifactId>paper-api</artifactId>
-      <version>1.16.5-R0.1-SNAPSHOT</version>
-      <scope>provided</scope>
+      <groupId>nikochir</groupId>
+      <artifactId>mineguis</artifactId>
+      <version>1.0.0</version>
+      <type>jar</type>
+      <scope>system</scope>
+      <systemPath>${project.basedir}/mineguis/bin</systemPath>
+      <optional>true</optional>
     </dependency>
-    <!-- -->
-    <!--dependency>
-        <groupId>me.kolossa</groupId>
-        <artifactId>MongoAPI</artifactId>
-        <version>1.0-SNAPSHOT</version>
-        <scope>provided</scope>
-    </dependency-->
   </dependencies>
   <!-- -->
   <build>
     <!-- -->
-    <resources>
-        <resource>
-          <directory>rsc</directory>
-          <filtering>true</filtering>
-        </resource>
-      </resources>
+    <finalName>${project.artifactId}-${project.version}</finalName>
+    <directory>${project.basedir}/bin</directory>
+    <sourceDirectory>{project.basedir}/src/main</sourceDirectory>
+    <outputDirectory>${project.build.directory}/main</outputDirectory>
+    <testSourceDirectory>{project.basedir}/src/test</testSourceDirectory>
+    <testOutputDirectory>${project.build.directory}/test</testOutputDirectory>
+		<!-- objects are to be places in the .jar root (not compile, but use) -->
+  	<resources>
+      <resource>
+	      <directory>${project.basedir}/rsc/main</directory>
+      	<filtering>true</filtering>
+    	</resource>
+  	</resources>
+    <testResources>
+      <testResource>
+        <directory>${project.basedir}/rcs/test</directory>
+      	<filtering>true</filtering>
+      </testResource>
+    </testResources>
     <!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
     <pluginManagement>
       <plugins>
@@ -157,3 +172,4 @@
     </pluginManagement>
   </build>
 </project>
+<!-- end_of_file -->

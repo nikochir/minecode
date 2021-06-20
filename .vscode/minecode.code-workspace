@@ -8,6 +8,21 @@
 	],
 	"settings": {
 		/* vscode */
+		/** editor **/
+		"editor.fontFamily":
+			//"Apercu Mono",
+			//"Fira Code",
+			//"Input Mono",
+			//"Dank Mono",
+			//"Gintronic",
+			//"Monoid",
+			//"Hack",
+			//"Victor Mono",
+			//"DejaVu Sans Mono",
+			//"MonoLisa",
+			 "Consolas, 'Courier New', monospace",
+		"editor.fontSize": 14,
+		"editor.fontLigatures":  true,
 		/* extensions */
 		/** drawio **/
 		"hediet.vscode-drawio.offline": true,
@@ -19,7 +34,7 @@
 		"hediet.vscode-drawio.customColorSchemes": [],
 		"hediet.vscode-drawio.customFonts": [ "Consolas" ],
 		/** dashboard **/
-		"dashboard.openOnStartup": "always",
+		"dashboard.openOnStartup": "empty workspace",
 		"dashboard.projectTileWidth": 350,
 		"dashboard.displayProjectPath": true,
 		"dashboard.showAddProjectButtonTile": false,

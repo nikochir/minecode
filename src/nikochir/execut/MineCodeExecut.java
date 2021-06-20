@@ -1,14 +1,16 @@
 /* package */
-package nikochir.executors;
+package nikochir.execut;
 /* include */
 import org.bukkit.command.Command;
-import org.bukkit.command.CommandSender;
 import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
 import org.jetbrains.annotations.NotNull;
 /* typedef */
-/* MineMenuExecutor class
+/* MineCodeExecutor class
+ * Description:
+ * > ;
 */
-public class MineMenuExecutor implements CommandExecutor {
+public class MineCodeExecut implements CommandExecutor {
     /* onevent */
     @Override
     public boolean onCommand(

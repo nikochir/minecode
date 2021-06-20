@@ -1,5 +1,5 @@
 /* package */
-package nikochir.listeners;
+package nikochir.listen;
 import org.bukkit.entity.Player;
 /* include */
 import org.bukkit.event.EventHandler;
@@ -8,7 +8,11 @@ import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerLoginEvent;
 /* typedef */
-public class MineCodeListener implements Listener {
+/* MineCodeListener class
+ * description:
+ * >;
+*/
+public class MineCodeListen implements Listener {
     /* codetor */
     /* getters */
     /* setters */
