@@ -20,7 +20,7 @@ public class MineCodeListen implements Listener {
     /* command */
     private void ologPlayer(Player objPlayer) {
         System.out.format(
-            "onPlayerJoin: { name: %s; time: %d; last: %d; };\n",
+            "onPlayerJoin: { name: %s; time: %d; };\n",
             objPlayer.getName(),
             objPlayer.getPlayerTime()
         );

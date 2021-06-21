@@ -1,6 +1,6 @@
 #directories#
 *.settings/
-*server*/
+*server/
 *target/
 *maven/repo/
 #binary#

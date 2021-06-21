@@ -10,8 +10,6 @@ import org.bukkit.permissions.Permission;
 public class MineCodePermit extends Permission {
     /* members */
     /* codetor */
-    public MineCodePermit() {
-        super("access");
-    }
+    public MineCodePermit() { super("minecode.*"); }
     /* onevent */
 }
