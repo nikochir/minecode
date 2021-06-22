@@ -2,21 +2,19 @@
 package nikochir.listen;
 import org.bukkit.entity.Player;
 /* include */
+/** bukkit **/
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerLoginEvent;
 /* typedef */
-/* MineCodeListener class
- * description:
- * >;
+/*
+ * MineCodeListener class
+ * > Description:
+ * -> ;
 */
 public class MineCodeListen implements Listener {
-    /* codetor */
-    /* getters */
-    /* setters */
-    /* vetters */
     /* command */
     private void ologPlayer(Player objPlayer) {
         System.out.format(
@@ -38,3 +36,4 @@ public class MineCodeListen implements Listener {
         ologPlayer(objEvent.getPlayer());
     }
 }
+/* end_of_file */

@@ -1,17 +1,17 @@
 /* package */
 package nikochir.permit;
 /* include */
-/** bukkit **/
 import org.bukkit.permissions.Permission;
 /* typedef */
 /*
- * MineCodePermission class
+ * MineGuisPermission class
  * > Description:
  * -> ;
 */
-public class MineCodePermit extends Permission {
+public class MineGuisPermit extends Permission {
     /* members */
     /* codetor */
-    public MineCodePermit() { super("minecode.*"); }
+    public MineGuisPermit() { super("mineguis.*"); }
+    /* onevent */
 }
 /* end_of_file */

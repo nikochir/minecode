@@ -1,14 +1,16 @@
 /* package */
 package nikochir;
+/* include */
 import nikochir.execut.*;
 import nikochir.listen.*;
 import nikochir.permit.*;
 /** bukkit **/
 import org.bukkit.plugin.java.JavaPlugin;
 /* typedef */
-/* MineCode class
- * Description:
- * > main plugin entry point;
+/*
+ * MineCode class
+ * > Description:
+ * -> main plugin entry point;
 */
 public final class MineCode extends JavaPlugin {
     /* members */
@@ -24,8 +26,11 @@ public final class MineCode extends JavaPlugin {
         /* init */
         objInstance = this;
         /* work */
+        /** execut **/
         getServer().getPluginCommand("minecode").setExecutor(new MineCodeExecut());
+        /** listen **/
         getServer().getPluginManager().registerEvents(new MineCodeListen(), this);
+        /** permit **/
         getServer().getPluginManager().addPermission(new MineCodePermit());
         /* quit */
     }
@@ -37,3 +42,4 @@ public final class MineCode extends JavaPlugin {
         objInstance = null;
     }
 }
+/* end_of_file */

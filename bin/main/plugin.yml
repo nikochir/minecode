@@ -21,27 +21,20 @@ permissions:
     children:
       #
     description:
-      gives access to simple minecode features
+      gives access to simple features
   minecode.oper:
     default: false
     children:
-      #
+      minecode.user: true
     description:
-      gives access to advanced minecode features
+      gives access to advanced features
   minecode.over:
     default: false
     children:
-      #
+      minecode.user: true
+      minecode.oper: true
     description:
-      gives access to strongest minecode features
-# minecode.*:
-#    default: true
-#    children:
-#      minecode.user: true
-#      minecode.oper: true
-#      minecode.over: true
-#    description:
-#      gives access to all minecode stuff
+      gives access to the strongest stuff
 #info#
 prefix: mcode
 author: nikodim_cheer
