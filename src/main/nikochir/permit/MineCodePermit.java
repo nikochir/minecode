@@ -7,11 +7,11 @@ import org.bukkit.permissions.Permission;
 /*
  * MineCodePermission class
  * > Description:
- * -> ;
+ * -> default permissions;
 */
 public class MineCodePermit extends Permission {
     /* members */
     /* codetor */
     public MineCodePermit() { super("minecode.*"); }
 }
-/* end_of_file */
+/* endfile */

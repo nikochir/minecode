@@ -5,56 +5,6 @@
 			"path": "../",
 			"uri": "https://github.com/nikochir/minecode"
 		}
-	],
-	"settings": {
-		/* vscode */
-		/** editor **/
-		"editor.fontSize": 14,
-		"editor.fontWeight": "400",
-		"editor.fontLigatures":  true,
-		"editor.fontFamily":
-			//"Apercu Mono"
-			//"Fira Code"
-			//"Input Mono"
-			//"Dank Mono"
-			//"Gintronic"
-			//"Monoid"
-			//"Hack"
-			//"Victor Mono"
-			//"DejaVu Sans Mono"
-			//"MonoLisa"
-			//"Consolas, 'Courier New', monospace"
-			//"SourceCodePro-Regular"
-			"Source Code Pro, Mono Lisa, Victor Mono, Input Mono, Fira Code, Inconsolata, MonoId, Consolas, Courier New, monospace"
-			//"VT323 Regular"
-			//"Manic Maner Regular"
-		,
-		/* extensions */
-		/** drawio **/
-		"hediet.vscode-drawio.offline": true,
-		"hediet.vscode-drawio.theme": "dark",
-		"hediet.vscode-drawio.online-url": "https://embed.diagrams.net/",
-		"hediet.vscode-drawio.plugins": [],
-		"hediet.vscode-drawio.knownPlugins": [],
-		"hediet.vscode-drawio.customLibraries": [],
-		"hediet.vscode-drawio.customColorSchemes": [],
-		"hediet.vscode-drawio.customFonts": [ "Consolas" ],
-		/** dashboard **/
-		"dashboard.openOnStartup": "empty workspace",
-		"dashboard.projectTileWidth": 350,
-		"dashboard.displayProjectPath": true,
-		"dashboard.showAddProjectButtonTile": false,
-		/** java **/
-		"java.home": "f:/cdev/jdk",
-		"java.configuration.maven.userSettings": "f:/cdev/mvn/conf/settings.xml",
-		"java.configuration.maven.globalSettings": "f:/cdev/mvn/conf/settings.xml",
-		/** maven **/
-		"maven.view": "hierarchical",
-		"maven.terminal.customEnv": [],
-		"maven.terminal.favorites": [],
-		"maven.terminal.useJavaHome": true,
-		"maven.executable.options": "",
-		"maven.executable.preferMavenWrapper": false,
-		"java.configuration.updateBuildConfiguration": "disabled",
-	}
+	]
 }
+/* endfile */

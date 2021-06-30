@@ -1,0 +1,3 @@
+[submodule "mineguis"]
+	path = mineguis
+	url = https://gitlab.com/jacksa/mineguis

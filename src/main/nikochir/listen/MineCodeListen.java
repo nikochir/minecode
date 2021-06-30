@@ -9,13 +9,12 @@ import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerLoginEvent;
 /* typedef */
-/*
- * MineCodeListener class
+/* MineCodeListener class
  * > Description:
- * -> ;
+ * -> default event processor;
 */
 public class MineCodeListen implements Listener {
-    /* command */
+    /* actions */
     private void ologPlayer(Player objPlayer) {
         System.out.format(
             "onPlayerJoin: { name: %s; time: %d; };\n",
@@ -36,4 +35,4 @@ public class MineCodeListen implements Listener {
         ologPlayer(objEvent.getPlayer());
     }
 }
-/* end_of_file */
+/* endfile */

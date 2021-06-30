@@ -1,6 +1,7 @@
 /* package */
 package nikochir.execut;
 /* include */
+import nikochir.MineCode;
 /** bukkit **/
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -9,13 +10,12 @@ import org.bukkit.entity.Player;
 /** jbrain **/
 import org.jetbrains.annotations.NotNull;
 /* typedef */
-/*
- * MineCodeExecutor class
+/* MineCodeExecutor class
  * > Description:
- * -> ;
+ * -> main command to call any other main command of sub plugins;
 */
 public class MineCodeExecut implements CommandExecutor {
-    /* onevent */
+    /* handles */
     @Override
     public boolean onCommand(
         @NotNull CommandSender objSender,
@@ -23,10 +23,11 @@ public class MineCodeExecut implements CommandExecutor {
         @NotNull String strLabel,
         @NotNull String[] strArgs
     ) {
-        if (objSender instanceof Player) {
-            Player objPlayer = (Player) objSender;
-        } else { /* not player click */
+        if ((objSender instanceof Player) == false) {
+            MineCode.get().doLog("not a player!");
+            return false;
         }
+        Player objPlayer = (Player) objSender;
         return true;
     }
 }

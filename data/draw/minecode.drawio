@@ -1,9 +1,18 @@
 <mxfile>
     <diagram id="YoQM0VQgEe_1ELtJyUfX" name="Page-1">
-        <mxGraphModel dx="1958" dy="772" grid="1" gridSize="16" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="256" pageHeight="256" background="#000000" math="1" shadow="1">
+        <mxGraphModel dx="437" dy="184" grid="1" gridSize="16" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="256" pageHeight="256" background="#000000" math="1" shadow="1">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" value="back" parent="0"/>
+                <mxCell id="2" value="" style="shape=image;imageAspect=0;aspect=fixed;verticalLabelPosition=bottom;verticalAlign=top;image=data:image/bmp,Qk0+AgAAAAAAAD4AAAAoAAAAQAAAAEAAAAABAAEAAAAAAAACAAASCwAAEgsAAAIAAAACAAAAAAAAAODg4AAAAwAHAAAAAAAFAwUAAAAAAAoEjwAf+AAAFAdcAGAGAIAoALgAn/kAwFAAkADgBwCgoAFIAQAAgKFAAjQAx+MAkoAESgAYGABNAAiKACAEwEoAEQwAD/BgNgAiAAAwDDApAEQAAEACMDjAiAAAH/hwBiCQAABgBuAB8OAAAIABAAAAA8AAZCYAAAAMMAAOMAAAADIMAA4wAAAAywMAHHAADDCtAQA44AAMMLUBADDAAA/wlwEAOMAAD/CdAQAcYAADwLQBAA5wAAPAk8EADjAAPDyP8QAGIAA8PL/9AAYAADw8//8ADAAAPDw//AAIAAAAAA/wAAAAAAAAA8AAAAAAAAAAAAAAAAAAAEJOP////AAeQlIgAAAEAGFzliecePTjj0pQLDJlhKKQSlAsMmXkoqBzjiwyZYSqoAAAJ5x49L6g//8gAAAEvqC9wSi+TPS2kL2tKJxdhOOPva8qnH3kAGGlry+cdYQAHoGtLb5k9AAAmcEgAAAEAAD//z////z/////AAAAAAAgBAAHAD/AACAEABrAQCAAIAQAYjAfgAAgBABCECDYACAEAEcQP8QAIAQAWNBAYgAgBABgMH/i/////7jAgDJho+T8pwBljGGmBACiJAzAbaYEAKI8GMB/pgQAshgZgHOmBACOZhmAMyPkAHFmDMAAIAQADwAGgA==;" vertex="1" parent="1">
+                    <mxGeometry x="64" y="128" width="64" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="&lt;font face=&quot;Minecraftia&quot; style=&quot;font-size: 8px&quot;&gt;the first product: &quot;mineguis&quot;&lt;/font&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];strokeColor=none;rounded=0;fillColor=#1A1A1A;strokeWidth=8;glass=0;" vertex="1" parent="1">
+                    <mxGeometry x="16" y="96" width="160" height="16" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="&lt;font face=&quot;Minecraftia&quot; style=&quot;font-size: 8px&quot;&gt;MineCode workspace&lt;/font&gt;" style="text;html=1;resizable=0;autosize=1;align=center;verticalAlign=middle;points=[];strokeColor=none;rounded=0;fillColor=#1A1A1A;strokeWidth=8;glass=0;" vertex="1" parent="1">
+                    <mxGeometry x="64" y="16" width="128" height="16" as="geometry"/>
+                </mxCell>
             </root>
         </mxGraphModel>
     </diagram>

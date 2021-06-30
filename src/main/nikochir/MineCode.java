@@ -4,8 +4,16 @@ package nikochir;
 import nikochir.execut.*;
 import nikochir.listen.*;
 import nikochir.permit.*;
+/** javkit - standard utilities **/
+import java.util.List;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
 /** bukkit **/
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.plugin.PluginDescriptionFile;
+import org.bukkit.configuration.file.FileConfiguration;
+import org.bukkit.entity.Player;
 /* typedef */
 /*
  * MineCode class
@@ -16,11 +24,20 @@ public final class MineCode extends JavaPlugin {
     /* members */
     private static MineCode objInstance;
     /* getters */
-    public static MineCode get() { return objInstance; }
+    public static MineCode get()                       { return objInstance; }
+    public Player          getPlayer(String strPlayer) { return this.getServer().getPlayer(strPlayer); }
+    public Boolean         getConfigBit(String strKey) { return this.getConfig().getBoolean(strKey); }
+    public Integer         getConfigInt(String strKey) { return this.getConfig().getInt(strKey); }
+    public Double          getConfigNum(String strKey) { return this.getConfig().getDouble(strKey); }
+    public String          getConfigStr(String strKey) { return this.getConfig().getString(strKey); }
+    public List<String>    getConfigArr(String strKey) { return this.getConfig().getStringList(strKey); }
     /* setters */
     /* vetters */
-    /* command */
-    /* onevent */
+    /* actions */
+    public void doLog(String strLog) {
+        System.out.println(String.format("[%s]: %s", getConfigStr("nameof_main"), strLog));
+    }
+    /* handles */
     @Override
     public void onEnable() {
         /* init */
@@ -42,4 +59,4 @@ public final class MineCode extends JavaPlugin {
         objInstance = null;
     }
 }
-/* end_of_file */
+/* endfile */
