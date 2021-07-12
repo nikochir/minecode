@@ -5,13 +5,13 @@ package nikochir.permit;
 import org.bukkit.permissions.Permission;
 /* typedef */
 /*
- * MineCodePermission class
+ * Permission class
  * > Description:
  * -> default permissions;
 */
-public class MineCodePermit extends Permission {
+public class Permit extends Permission {
     /* members */
     /* codetor */
-    public MineCodePermit() { super("minecode.*"); }
+    public Permit() { super("minecode.*"); }
 }
 /* endfile */

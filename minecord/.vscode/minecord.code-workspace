@@ -1,7 +1,7 @@
 {
 	"folders": [
 		{
-			"name": "minecode",
+			"name": "minecord",
 			"path": "../"
 		}
 	],
@@ -15,7 +15,7 @@
 		},
 		/** editor **/
 		"editor.fontSize": 16,
-		"editor.fontWeight": "400",
+		"editor.fontWeight": 400,
 		"editor.fontLigatures":  true,
 		"editor.fontFamily":
 			//"Apercu Mono"
@@ -40,7 +40,7 @@
 		/** terminal **/
 		"terminal.explorerKind": "integrated",
 		"terminal.integrated.gpuAcceleration": "on",
-		"terminal.integrated.cwd": "${workspaceFolder}/server/local",
+		"terminal.integrated.cwd": "${workspaceFolder}",
 		"terminal.integrated.splitCwd": "workspaceRoot",
 		"terminal.integrated.confirmOnExit": true,
 		"terminal.integrated.scrollback": 1000,
@@ -60,7 +60,7 @@
 		"terminal.integrated.fontWeight": 400,
 		"terminal.integrated.fontWeightBold": 1000,
 		"terminal.integrated.fontFamily": "MonoId, Source Code Pro",
-		"terminal.integrated.wordSeparators": " ()[]{}',\"`─",
+		"terminal.integrated.wordSeparators": " ()[]{}',\"`â”€",
 		/*** tabs ***/
 		"terminal.integrated.tabs.showActiveTerminal": "always",
 		/* extensions */
@@ -85,15 +85,10 @@
 		"java.contentProvider.preferred": "",
 		/*** project ***/
 		"java.project.outputPath": "${workspaceFolder}/bin",
+		"java.project.sourcePaths": [ "" ],
 		"java.project.exportJar.targetPath": "${workspaceFolder}/bin/${workspaceFolderBasename}.jar",
-		"java.project.sourcePaths": [ "", "minecord", "mineguis" ],
-		"java.project.referencedLibraries": [
-			"lib/**/*.jar"
-		],
-		"java.project.resourceFilters": [
-			"node_modules",
-			".git"
-		],
+		"java.project.referencedLibraries": [ "lib/**/*.jar" ],
+		"java.project.resourceFilters": [ "node_modules", ".git" ],
 		/*** configuration ***/
 		"java.configuration.checkProjectSettingsExclusions": false,
 		"java.configuration.updateBuildConfiguration": "disabled",

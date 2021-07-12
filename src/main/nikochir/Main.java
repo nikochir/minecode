@@ -16,15 +16,15 @@ import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 /* typedef */
 /*
- * MineCode class
+ *  class
  * > Description:
  * -> main plugin entry point;
 */
-public final class MineCode extends JavaPlugin {
+public final class  extends JavaPlugin {
     /* members */
-    private static MineCode objInstance;
+    private static  objInstance;
     /* getters */
-    public static MineCode get()                       { return objInstance; }
+    public static  get()                       { return objInstance; }
     public Player          getPlayer(String strPlayer) { return this.getServer().getPlayer(strPlayer); }
     public Boolean         getConfigBit(String strKey) { return this.getConfig().getBoolean(strKey); }
     public Integer         getConfigInt(String strKey) { return this.getConfig().getInt(strKey); }
@@ -34,7 +34,7 @@ public final class MineCode extends JavaPlugin {
     /* setters */
     /* vetters */
     /* actions */
-    public void doLog(String strLog) {
+    public void doLogO(String strLog) {
         System.out.println(String.format("[%s]: %s", getConfigStr("nameof_main"), strLog));
     }
     /* handles */
@@ -44,11 +44,11 @@ public final class MineCode extends JavaPlugin {
         objInstance = this;
         /* work */
         /** execut **/
-        getServer().getPluginCommand("minecode").setExecutor(new MineCodeExecut());
+        getServer().getPluginCommand("minecode").setExecutor(new Execut());
         /** listen **/
-        getServer().getPluginManager().registerEvents(new MineCodeListen(), this);
+        getServer().getPluginManager().registerEvents(new Listen(), this);
         /** permit **/
-        getServer().getPluginManager().addPermission(new MineCodePermit());
+        getServer().getPluginManager().addPermission(new Permit());
         /* quit */
     }
     @Override

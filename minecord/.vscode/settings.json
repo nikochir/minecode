@@ -8,7 +8,7 @@
     },
     /** editor **/
     "editor.fontSize": 16,
-    "editor.fontWeight": "400",
+    "editor.fontWeight": 400,
     "editor.fontLigatures":  true,
     "editor.fontFamily":
         //"Apercu Mono"
@@ -33,7 +33,7 @@
     /** terminal **/
     "terminal.explorerKind": "integrated",
     "terminal.integrated.gpuAcceleration": "on",
-    "terminal.integrated.cwd": "${workspaceFolder}/server/local",
+    "terminal.integrated.cwd": "${workspaceFolder}",
     "terminal.integrated.splitCwd": "workspaceRoot",
     "terminal.integrated.confirmOnExit": true,
     "terminal.integrated.scrollback": 1000,

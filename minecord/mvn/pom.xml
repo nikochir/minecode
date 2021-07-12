@@ -6,43 +6,72 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
   http://maven.apache.org/xsd/maven-4.0.0.xsd"
 >
-  <!--  -->
+  <!-- currently supported project object model version -->
   <modelVersion>4.0.0</modelVersion>
-  <!-- project properties -->
+  <!-- project -->
   <groupId>nikochir</groupId>
-  <artifactId>minecode</artifactId>
+  <artifactId>minecord</artifactId>
   <version>1.0.0</version>
   <packaging>jar</packaging>
-  <name>minecode</name>
-  <url>http://github.com/nikochir/minecode</url>
+  <name>minecord</name>
+  <url>http://github.com/nikochir/minecord</url>
   <properties>
     <java.version>1.8</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
-  <!-- -->
+  <!-- where to get artifacts -->
   <repositories>
+    <!-- native -->
     <repository>
       <id>nikochir</id>
-      <url>https://github.com/nikochir/minecode</url>
+      <url>https://github.com/nikochir/minecord</url>
       <name>repomain</name>
       <layout>default</layout>
       <snapshots>
         <enabled>false</enabled>
       </snapshots>
     </repository>
-    <!-- -->
-    <repository>
-      <id>papermc-repo</id>
-      <url>https://papermc.io/repo/repository/maven-public/</url>
-    </repository>
-    <!-- -->
+    <!-- control -->
     <repository>
       <id>gitlab-maven</id>
       <url>https://gitlab.com/api/v4/projects/26894501/packages/maven</url>
     </repository>
+    <!-- plugin -->
+    <repository>
+      <id>bukkit-repo</id>
+      <url>http://repo.bukkit.org/content/groups/public/</url>
+    </repository>
+    <repository>
+      <id>papermc-repo</id>
+      <url>https://papermc.io/repo/repository/maven-public/</url>
+    </repository>
   </repositories>
-  <!-- -->
+  <!-- what artifacts to use -->
+  <dependencies>
+    <!-- minecraft -->
+    <dependency>
+      <groupId>org.bukkit</groupId>
+      <artifactId>bukkit</artifactId>
+      <version>1.15.2-R0.1-SNAPSHOT</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.spigotmc</groupId>
+      <artifactId>spigot-api</artifactId>
+      <version>1.16.4-R0.1-SNAPSHOT</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.destroystokyo.paper</groupId>
+      <artifactId>paper-api</artifactId>
+      <version>1.16.5-R0.1-SNAPSHOT</version>
+      <type>jar</type>
+      <scope>provided</scope>
+      <optional>false</optional>
+    </dependency>
+  </dependencies>
+    <!-- generated file support -->
   <distributionManagement>
     <repository>
       <id>gitlab-maven</id>
@@ -53,36 +82,12 @@
       <url>https://gitlab.com/api/v4/projects/26894501/packages/maven</url>
     </snapshotRepository>
   </distributionManagement>
-  <!-- -->
-  <dependencies>
-    <!-- -->
-    <dependency>
-      <groupId>com.destroystokyo.paper</groupId>
-      <artifactId>paper-api</artifactId>
-      <version>1.16.5-R0.1-SNAPSHOT</version>
-      <type>jar</type>
-      <scope>provided</scope>
-      <!--systemPath>f:/work/minecode/</systemPath-->
-      <optional>false</optional>
-    </dependency>
-    <!-- -->
-    <dependency>
-      <groupId>nikochir</groupId>
-      <artifactId>mineguis</artifactId>
-      <version>1.0.0</version>
-      <type>jar</type>
-      <scope>system</scope>
-      <!--systemPath>${project.basedir}/../mineguis/bin/mineguis-1.0.0.jar</systemPath-->
-      <systemPath>${project.basedir}/../server/local/plugins/mineguis-1.0.0.jar</systemPath>
-      <optional>true</optional>
-    </dependency>
-  </dependencies>
-  <!-- -->
+  <!-- resulting target configuration -->
   <build>
-    <!-- -->
-    <!--directory>${project.basedir}/../bin</directory-->
+    <!-- where to place and how to name the target -->
+    <!-- directory>${project.basedir}/../bin</directory -->
     <directory>${project.basedir}/../server/local/plugins</directory>
-    <finalName>${project.artifactId}-${project.version}</finalName>
+    <finalName>${project.artifactId}</finalName>
     <sourceDirectory>${project.basedir}/../src/main</sourceDirectory>
     <outputDirectory>${project.basedir}/../bin/main</outputDirectory>
     <testSourceDirectory>{project.basedir}/../src/test</testSourceDirectory>

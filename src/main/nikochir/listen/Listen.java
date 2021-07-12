@@ -9,11 +9,11 @@ import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerLoginEvent;
 /* typedef */
-/* MineCodeListener class
+/* Listener class
  * > Description:
  * -> default event processor;
 */
-public class MineCodeListen implements Listener {
+public class Listen implements Listener {
     /* actions */
     private void ologPlayer(Player objPlayer) {
         System.out.format(

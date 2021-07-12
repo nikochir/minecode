@@ -15,3 +15,7 @@ xml  | config
     because it uses local path of the machiene that developer used;
 * building system is targeted on maven;
 * theoretically, it can run with maven in the terminal;
+* attentions to extensions!
+    * java project manager does not show any projects
+        * unless you add the workspace folder!
+        * just opening/creating java project did not help me;

@@ -1,6 +1,6 @@
 #main#
 name: minecode
-main: nikochir.MineCode
+main: nikochir.
 version: ${project.version}
 api-version: 1.16
 #work#
