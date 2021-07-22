@@ -1,7 +1,7 @@
 /* package */
-package nikochir.execut;
+package nikochir.minecode.execut;
 /* include */
-import nikochir.Main;
+import nikochir.minecode.Main;
 /** bukkit **/
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -10,7 +10,7 @@ import org.bukkit.entity.Player;
 /** jbrain **/
 import org.jetbrains.annotations.NotNull;
 /* typedef */
-/* Executor class
+/** Executor class
  * > Description:
  * -> main command to call any other main command of sub plugins;
 */
@@ -24,7 +24,7 @@ public class Execut implements CommandExecutor {
         @NotNull String[] strArgs
     ) {
         if ((objSender instanceof Player) == false) {
-            .get().doLogO("not a player!");
+            Main.get().doLogO("not a player!");
             return false;
         }
         Player objPlayer = (Player) objSender;

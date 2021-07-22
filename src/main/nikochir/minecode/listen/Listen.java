@@ -1,6 +1,5 @@
 /* package */
-package nikochir.listen;
-import org.bukkit.entity.Player;
+package nikochir.minecode.listen;
 /* include */
 /** bukkit **/
 import org.bukkit.event.EventHandler;
@@ -8,8 +7,9 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerQuitEvent;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerLoginEvent;
+import org.bukkit.entity.Player;
 /* typedef */
-/* Listener class
+/** Listener class
  * > Description:
  * -> default event processor;
 */

@@ -1,9 +1,29 @@
 {
 	"folders": [
+		//*
 		{
 			"name": "minecode",
 			"path": "../"
+		},
+		//*/
+		//*
+		{
+			"name": "mineguis",
+			"path": "../mineguis"
+		},
+		//*/
+		//*
+		{
+			"name": "minecord",
+			"path": "../minecord"
+		},
+		//*/
+		//*
+		{
+			"name": "minetime",
+			"path": "../minetime"
 		}
+		//*/
 	],
 	"settings": {
 		/* vscode */
@@ -12,35 +32,18 @@
 			"**/.git": false,
 			"**/.target": false,
 			"**/.classpath": false,
+			"**/.settings": false,
+			"**/.project": false,
 		},
 		/** editor **/
-		"editor.fontSize": 16,
-		"editor.fontWeight": "400",
+		"editor.fontSize": 12,
+		"editor.fontWeight": 400,
 		"editor.fontLigatures":  true,
-		"editor.fontFamily":
-			//"Apercu Mono"
-			//"Fira Code"
-			//"Input Mono"
-			//"Dank Mono"
-			//"Gintronic"
-			//"Monoid"
-			//"Hack"
-			//"Victor Mono"
-			//"DejaVu Sans Mono"
-			//"MonoLisa"
-			//"Consolas, 'Courier New', monospace"
-			//"SourceCodePro-Regular"
-			"Source Code Pro, Mono Lisa, Victor Mono, Input Mono, Fira Code, Inconsolata, MonoId, Consolas, Courier New, monospace"
-			//"VT323, Mozart NBP, Mayfair NBP, Silverfinster"
-			//"Daedra, Dragon Script"
-			//"mason chronicles"
-			//"Manic Miner, Mayfair NBP, VT323 Regular"
-			//"Manic Maner Regular"
-		,
+		"editor.fontFamily": "Source Code Pro, MonoId, Consolas, Courier New, monospace",
 		/** terminal **/
 		"terminal.explorerKind": "integrated",
 		"terminal.integrated.gpuAcceleration": "on",
-		"terminal.integrated.cwd": "${workspaceFolder}/server/local",
+		"terminal.integrated.cwd": "${workspaceFolder}",
 		"terminal.integrated.splitCwd": "workspaceRoot",
 		"terminal.integrated.confirmOnExit": true,
 		"terminal.integrated.scrollback": 1000,
@@ -72,28 +75,40 @@
 		"hediet.vscode-drawio.knownPlugins": [],
 		"hediet.vscode-drawio.customLibraries": [],
 		"hediet.vscode-drawio.customColorSchemes": [],
-		"hediet.vscode-drawio.customFonts": [ "Consolas" ],
+		"hediet.vscode-drawio.customFonts": [ "Consolas", "MonoId", "Source Code Pro" ],
 		/** dashboard **/
 		"dashboard.openOnStartup": "empty workspace",
-		"dashboard.projectTileWidth": 350,
+		"dashboard.projectTileWidth": 300,
+		/*** view ***/
 		"dashboard.displayProjectPath": true,
-		"dashboard.showAddProjectButtonTile": false,
+		"dashboard.showAddProjectButtonTile": true,
+		/*** custom ***/
+		"dashboard.customCss": "",
+		// "dashboard.customProjectCardBackground": "#aaaaaa",
+		// "dashboard.customProjectNameColor": "#ffffff",
+		// "dashboard.customProjectPathColor": "#777777",
 		/** java **/
 		"java.home": "f:/cdev/jdk",
 		"java.trace.server": "off",
 		"java.server.launchMode": "Standard",
 		"java.contentProvider.preferred": "",
+		"java.settings.url": "${workspaceFolder}/mvn/settings.xml",
 		/*** project ***/
-		"java.project.outputPath": "${workspaceFolder}/bin",
+		"java.project.outputPath": "bin",
 		"java.project.exportJar.targetPath": "${workspaceFolder}/bin/${workspaceFolderBasename}.jar",
-		"java.project.sourcePaths": [ "", "minecord", "mineguis" ],
+		"java.project.sourcePaths": [
+			""
+		],
 		"java.project.referencedLibraries": [
-			"lib/**/*.jar"
+			"lib/**/*.jar",
+			"bin/dependency/mongodb-crypt-1.2.0.jar",
+			"bin/dependency/mongodb-driver-3.2.2-sources.jar",
+			"bin/dependency/mongodb-driver-core-3.2.2-sources.jar",
+			"bin/dependency/mongodb-driver-3.2.2.jar",
+			"bin/dependency/mongodb-driver-core-3.2.2.jar",
+			"bin/dependency/bson-3.2.2.jar"
 		],
-		"java.project.resourceFilters": [
-			"node_modules",
-			".git"
-		],
+		"java.project.resourceFilters": [ "node_modules", ".git" ],
 		/*** configuration ***/
 		"java.configuration.checkProjectSettingsExclusions": false,
 		"java.configuration.updateBuildConfiguration": "disabled",
@@ -106,8 +121,8 @@
 		"java.format.enabled": true,
 		"java.format.onType.enabled": true,
 		"java.format.comments.enabled": true,
-		"java.format.settings.profile": "",
 		"java.format.settings.url": "",
+		"java.format.settings.profile": "",
 		/*** debug ***/
 		"java.debug.settings.forceBuildBeforeLaunch": true,
 		"java.debug.settings.showToString": true,
@@ -144,6 +159,7 @@
 		/** vsintellicode **/
 		"vsintellicode.java.completionsEnabled": true,
 		"vsintellicode.modelDownloadPath": null,
+		"java.dependency.syncWithFolderExplorer": true,
 	}
 }
 /* endfile */

@@ -1,10 +1,10 @@
 /* package */
-package nikochir;
+package nikochir.minecode;
 /* include */
-import nikochir.execut.*;
-import nikochir.listen.*;
-import nikochir.permit.*;
-/** javkit - standard utilities **/
+import nikochir.minecode.execut.*;
+import nikochir.minecode.listen.*;
+import nikochir.minecode.permit.*;
+/** java **/
 import java.util.List;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -15,16 +15,15 @@ import org.bukkit.plugin.PluginDescriptionFile;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
 /* typedef */
-/*
- *  class
+/** Main class
  * > Description:
  * -> main plugin entry point;
 */
-public final class  extends JavaPlugin {
+public final class Main extends JavaPlugin {
     /* members */
-    private static  objInstance;
+    private static Main objInstance;
     /* getters */
-    public static  get()                       { return objInstance; }
+    public static Main get() { return Main.objInstance; }
     public Player          getPlayer(String strPlayer) { return this.getServer().getPlayer(strPlayer); }
     public Boolean         getConfigBit(String strKey) { return this.getConfig().getBoolean(strKey); }
     public Integer         getConfigInt(String strKey) { return this.getConfig().getInt(strKey); }

@@ -1,11 +1,13 @@
 #main#
 name: minecode
-main: nikochir.
+main: nikochir.minecode.Main
 version: ${project.version}
 api-version: 1.16
 #work#
 load: STARTUP
 loadbefore: []
+depend: [ MongoAPI ]
+softdepend: []
 database: false
 commands:
   minecode:
@@ -37,8 +39,8 @@ permissions:
       gives access to the strongest stuff
 #info#
 prefix: mcode
-author: nikodim_cheer
-authors: [ nikodim_cheer ]
+author: nickodim_cheer
+authors: [ nickodim_cheer ]
 website: "https://github.com/nikochir/minecode"
 description:
   assembly of plugins and libraries

@@ -1,3 +1,9 @@
 [submodule "mineguis"]
 	path = mineguis
 	url = https://gitlab.com/jacksa/mineguis
+[submodule "minecord"]
+	path = minecord
+	url = https://github.com/nikochir/minecord
+[submodule "minetime"]
+	path = minetime
+	url = https://github.com/nikochir/minetime

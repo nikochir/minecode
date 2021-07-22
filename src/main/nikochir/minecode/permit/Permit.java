@@ -1,11 +1,10 @@
 /* package */
-package nikochir.permit;
+package nikochir.minecode.permit;
 /* include */
 /** bukkit **/
 import org.bukkit.permissions.Permission;
 /* typedef */
-/*
- * Permission class
+/** Permission class
  * > Description:
  * -> default permissions;
 */

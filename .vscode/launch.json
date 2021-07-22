@@ -2,46 +2,38 @@
     "version": "0.2.0",
     "inputs": [],
     "launch": {
-		"configurations": [],
-		"compounds": []
+		"configurations": [ "config:launch_test" ],
+		"compounds": [ "compon:launch_test" ]
 	},
     "configurations": [
         {
             "type": "java",
-            "name": "Attach",
-            "request": "attach",
-            "hostName": "localhost",
-            "port": "<debug port of the debuggee>"
-        },
-        {
-            "type": "java",
-            "name": "Attach to Remote Program",
-            "request": "attach",
-            "hostName": "<The host name or ip address of remote debuggee>",
-            "port": "<debug port of remote debuggee>"
-        },
-        {
-            "type": "java",
-            "name": "Launch Java Program",
+            "name": "Launch Main",
             "request": "launch",
-            "mainClass": ""
+            "mainClass": "src.test.nikochir.minecode.Main",
+            "projectName": "minecode_61b2fe3"
         },
         {
             "type": "java",
-            "name": "Launch External Terminal",
+            "name": "config:launch_test",
             "request": "launch",
-            "console": "externalTerminal",
-            "mainClass": ""
+            "projectName": "minecode_61b2fe3",
+            "mainClass": "src.test.nikochir.minecode.Main",
+            "console": "internalConsole",
+            "cwd": "${workspaceFolder}",
+            "sourcePaths": [ "./src/test/" ],
+            "presentation": {
+                "hidden": false,
+                "group": "launch",
+                "order": 1
+            }
         }
     ],
     "compounds": [
         {
-            "name": "comp",
+            "name": "compon:launch_test",
             "configurations": [
-                {
-                    "name": "play",
-                    "folder": "minecode",
-                }
+                { "name": "config:launch_test", "folder": "minecode" }
             ],
             "preLaunchTask": "",
             "stopAll": false,

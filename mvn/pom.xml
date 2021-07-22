@@ -8,13 +8,27 @@
 >
   <!-- currently supported project object model version -->
   <modelVersion>4.0.0</modelVersion>
+  <!-- information -->
+  <name>minecode</name>
+  <description>minecraft development workspace</description>
+  <developers>
+    <developer>
+      <name>Nickodim</name>
+      <organization>Jacksa</organization>
+    </developer>
+  </developers>
+  <licenses>
+    <license>
+      <name>freedom</name>
+      <url>http://www.whatever</url>
+    </license>
+  </licenses>
+  <url>http://github.com/nikochir/minecode</url>
   <!-- project -->
   <groupId>nikochir</groupId>
   <artifactId>minecode</artifactId>
-  <version>1.0.0</version>
+  <version>001</version>
   <packaging>jar</packaging>
-  <name>minecode</name>
-  <url>http://github.com/nikochir/minecode</url>
   <properties>
     <java.version>1.8</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -32,61 +46,136 @@
         <enabled>false</enabled>
       </snapshots>
     </repository>
-    <!-- plugin -->
-    <repository>
+    <!-- minecraft -->
+    <!--repository>
       <id>bukkit-repo</id>
       <url>http://repo.bukkit.org/content/groups/public/</url>
-    </repository>
+    </repository-->
     <repository>
       <id>papermc-repo</id>
       <url>https://papermc.io/repo/repository/maven-public/</url>
+      <name>repomine</name>
+    </repository>
+    <!-- database -->
+    <repository>
+    <id>mongodb</id>
+    <!--url>https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver</url-->
+    <url>https://mvnrepository.com/artifact/org.mongodb</url>
+    <name>repodata</name>
     </repository>
   </repositories>
   <!-- what artifacts to use -->
   <dependencies>
     <!-- native -->
-    <dependency>
+    <!--dependency>
       <groupId>nikochir</groupId>
       <artifactId>mineguis</artifactId>
-      <version>1.0.5</version>
+      <version>005</version>
       <type>jar</type>
       <scope>system</scope>
-      <!--systemPath>${project.basedir}/../mineguis/bin/mineguis.jar</systemPath-->
-      <systemPath>${project.basedir}/../server/local/plugins/mineguis.jar</systemPath>
+      <systemPath>${project.basedir}/../mineguis/bin/mineguis.jar</systemPath>
       <optional>true</optional>
     </dependency>
     <dependency>
       <groupId>nikochir</groupId>
       <artifactId>minecord</artifactId>
-      <version>1.0.0</version>
+      <version>001</version>
       <type>jar</type>
       <scope>system</scope>
-      <!--systemPath>${project.basedir}/../mineguis/bin/mineguis.jar</systemPath-->
-      <systemPath>${project.basedir}/../server/local/plugins/mineguis.jar</systemPath>
+      <systemPath>${project.basedir}/../minecord/bin/minecord.jar</systemPath>
       <optional>true</optional>
-    </dependency>
+    </dependency-->
     <!-- minecraft -->
-    <dependency>
+    <!--dependency>
       <groupId>org.bukkit</groupId>
       <artifactId>bukkit</artifactId>
       <version>1.15.2-R0.1-SNAPSHOT</version>
       <scope>provided</scope>
-    </dependency>
-    <dependency>
+    </dependency-->
+    <!--dependency>
       <groupId>org.spigotmc</groupId>
       <artifactId>spigot-api</artifactId>
       <version>1.16.4-R0.1-SNAPSHOT</version>
       <scope>provided</scope>
-    </dependency>
+    </dependency-->
     <dependency>
       <groupId>com.destroystokyo.paper</groupId>
       <artifactId>paper-api</artifactId>
       <version>1.16.5-R0.1-SNAPSHOT</version>
       <type>jar</type>
       <scope>provided</scope>
-      <!--systemPath>f:/work/minecode/</systemPath-->
+      <!--systemPath>${project.basedir}/../</systemPath-->
       <optional>false</optional>
     </dependency>
+    <!-- database -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.6</version>
+      <scope>compile</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.mongodb</groupId>
+      <artifactId>mongodb-driver</artifactId>
+      <version>3.2.2</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.mongodb</groupId>
+      <artifactId>bson</artifactId>
+      <version>4.2.1</version>
+      <scope>compile</scope>
+    </dependency>
+    <!--dependency>
+      <groupId>io.netty</groupId>
+      <artifactId>netty-buffer</artifactId>
+      <version>4.1.43.Final</version>
+      <scope>compile</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>io.netty</groupId>
+      <artifactId>netty-transport</artifactId>
+      <version>4.1.43.Final</version>
+      <scope>compile</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>com.github.jnr</groupId>
+      <artifactId>jnr-unixsocket</artifactId>
+      <version>0.18</version>
+      <scope>runtime</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>io.netty</groupId>
+      <artifactId>netty-handler</artifactId>
+      <version>4.1.43.Final</version>
+      <scope>runtime</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.xerial.snappy</groupId>
+      <artifactId>snappy-java</artifactId>
+      <version>1.1.4</version>
+      <scope>runtime</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>com.github.luben</groupId>
+      <artifactId>zstd-jni</artifactId>
+      <version>1.3.8-3</version>
+      <scope>runtime</scope>
+      <optional>true</optional>
+    </dependency>
+    <dependency>
+      <groupId>org.mongodb</groupId>
+      <artifactId>mongodb-crypt</artifactId>
+      <version>1.2.0</version>
+      <scope>runtime</scope>
+      <optional>true</optional>
+    </dependency-->
   </dependencies>
     <!-- generated file support -->
   <distributionManagement>
@@ -104,8 +193,7 @@
   <!-- resulting target configuration -->
   <build>
     <!-- where to place and how to name the target -->
-    <!--directory>${project.basedir}/../bin</directory-->
-    <directory>${project.basedir}/../server/local/plugins</directory>
+    <directory>${project.basedir}/../bin</directory>
     <finalName>${project.artifactId}</finalName>
     <sourceDirectory>${project.basedir}/../src/main</sourceDirectory>
     <outputDirectory>${project.basedir}/../bin/main</outputDirectory>
@@ -125,7 +213,7 @@
       	<filtering>true</filtering>
       </testResource>
     </testResources>
-    <!-- lock down plugins versions to avoid using maven defaults (may be moved to parent pom) -->
+    <!-- lock down plugins versions to avoid using maven defaults -->
     <pluginManagement>
       <plugins>
         <!-- -->
