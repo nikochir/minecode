@@ -19,8 +19,8 @@
   </developers>
   <licenses>
     <license>
-      <name>freedom</name>
-      <url>http://www.whatever</url>
+      <name>MIT License</name>
+      <url>https://opensource.org/licenses/MIT</url>
     </license>
   </licenses>
   <url>http://github.com/nikochir/minecode</url>
@@ -58,10 +58,10 @@
     </repository>
     <!-- database -->
     <repository>
-    <id>mongodb</id>
-    <!--url>https://mvnrepository.com/artifact/org.mongodb/mongo-java-driver</url-->
-    <url>https://mvnrepository.com/artifact/org.mongodb</url>
-    <name>repodata</name>
+      <id>mongodb</id>
+      <!--url>https://.mvnrepository.com/artifact/org.mongodb/mongo-java-driver</url-->
+      <url>https://.mvnrepository.com/artifact/org.mongodb</url>
+      <name>repodata</name>
     </repository>
   </repositories>
   <!-- what artifacts to use -->
@@ -193,23 +193,23 @@
   <!-- resulting target configuration -->
   <build>
     <!-- where to place and how to name the target -->
-    <directory>${project.basedir}/../bin</directory>
     <finalName>${project.artifactId}</finalName>
-    <sourceDirectory>${project.basedir}/../src/main</sourceDirectory>
-    <outputDirectory>${project.basedir}/../bin/main</outputDirectory>
-    <testSourceDirectory>{project.basedir}/../src/test</testSourceDirectory>
-    <testOutputDirectory>${project.basedir}/../bin/test</testOutputDirectory>
-    <scriptSourceDirectory>${project.basedir}/../src/main</scriptSourceDirectory>
+    <directory>${project.basedir}/../../bin/jav</directory>
+    <sourceDirectory>${project.basedir}/../../src/jav/main</sourceDirectory>
+    <outputDirectory>${project.basedir}/../../bin/jav/main</outputDirectory>
+    <testSourceDirectory>{project.basedir}/../../src/jav/test</testSourceDirectory>
+    <testOutputDirectory>${project.basedir}/../../bin/jav/test</testOutputDirectory>
+    <scriptSourceDirectory>${project.basedir}/../../src/jav/main</scriptSourceDirectory>
 		<!-- objects are to be places in the .jar root (not compile, but use) -->
   	<resources>
       <resource>
-	      <directory>${project.basedir}/../rsc/main</directory>
+	      <directory>${project.basedir}/../../rsc/main</directory>
       	<filtering>true</filtering>
     	</resource>
   	</resources>
     <testResources>
       <testResource>
-        <directory>${project.basedir}/../rcs/test</directory>
+        <directory>${project.basedir}/../../rcs/test</directory>
       	<filtering>true</filtering>
       </testResource>
     </testResources>

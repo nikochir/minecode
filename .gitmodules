@@ -1,9 +1,11 @@
+#main#
 [submodule "mineguis"]
-	path = mineguis
+	path = lib/mineguis
 	url = https://gitlab.com/jacksa/mineguis
 [submodule "minecord"]
-	path = minecord
+	path = lib/minecord
 	url = https://github.com/nikochir/minecord
 [submodule "minetime"]
-	path = minetime
+	path = lib/minetime
 	url = https://github.com/nikochir/minetime
+#endf#

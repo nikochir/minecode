@@ -5,8 +5,8 @@ server/
 data/movi
 */.settings/
 */.target/
-*/mvn/bin
-*/mvn/repo
+*/.mvn/bin
+*/.mvn/repo
 #extension#
 *.project
 #binary#

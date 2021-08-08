@@ -1,43 +1,57 @@
+/* schemas */
 {
     "version": "0.2.0",
     "inputs": [],
-    "launch": {
+    "launch":
+    {
 		"configurations": [ "config:launch_test" ],
 		"compounds": [ "compon:launch_test" ]
 	},
-    "configurations": [
+    "configurations":
+    [
         {
-            "type": "java",
+            "type": "node",
             "name": "Launch Main",
             "request": "launch",
-            "mainClass": "src.test.nikochir.minecode.Main",
+            "mainClass": "main.minecode.Main",
             "projectName": "minecode_61b2fe3"
         },
         {
-            "type": "java",
+            "type": "node",
+            "name": "config:attach_main",
+            "request": "attach",
+            "projectName": "minecode_61b2fe3"
+        },
+        {
+            "type": "node",
             "name": "config:launch_test",
             "request": "launch",
             "projectName": "minecode_61b2fe3",
-            "mainClass": "src.test.nikochir.minecode.Main",
+            "mainClass": "main.minecode.TestMain",
+            "classPaths": [ "$Auto" ],
             "console": "internalConsole",
             "cwd": "${workspaceFolder}",
             "sourcePaths": [ "./src/test/" ],
-            "presentation": {
+            "presentation":
+            {
                 "hidden": false,
                 "group": "launch",
                 "order": 1
             }
         }
     ],
-    "compounds": [
+    "compounds":
+    [
         {
             "name": "compon:launch_test",
-            "configurations": [
+            "configurations":
+            [
                 { "name": "config:launch_test", "folder": "minecode" }
             ],
             "preLaunchTask": "",
             "stopAll": false,
-            "presentation": {
+            "presentation":
+            {
                 "hidden": false,
                 "group": "",
                 "order": 1

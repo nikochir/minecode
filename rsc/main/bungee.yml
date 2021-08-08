@@ -1,4 +1,4 @@
 #main#
 name: minecode
-main: nikochir.
+main: main.
 version: ${project.version}

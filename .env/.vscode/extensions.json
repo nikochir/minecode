@@ -1,0 +1,19 @@
+/* schemas */
+{
+    "recommendations":
+    [
+        /* java */
+        "vscjava.vscode-java-pack",
+        "vscjava.vscode-java-test",
+        "vscjava.vscode-maven",
+        "wmanth.jar-viewer",
+        /* project */
+        "kruemelkatze.vscode-dashboard",
+        "donjayamanne.githistory",
+        "hediet.vscode-drawio",
+        /* coding */
+        "visualstudioexptteam.vscodeintellicode",
+    ],
+    "unwantedRecommendations": []
+}
+/* endfile */
