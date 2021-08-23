@@ -105,7 +105,7 @@
 		"java.trace.server": "off",
 		"java.server.launchMode": "Standard",
 		"java.contentProvider.preferred": "",
-		"java.settings.url": "${workspaceFolder}/.mvn/settings.xml",
+		"java.settings.url": "${workspaceFolder}/.maven/settings.xml",
 		/*** project ***/
 		"java.project.exportJar.targetPath":
 		"${workspaceFolder}/bin/target/${workspaceFolderBasename}.jar",
@@ -135,9 +135,9 @@
 		"java.configuration.checkProjectSettingsExclusions": false,
 		"java.configuration.updateBuildConfiguration": "disabled",
 		"java.configuration.maven.userSettings":
-		"${workspaceFolder}/.mvn/settings.xml",
+		"${workspaceFolder}/.maven/settings.xml",
 		"java.configuration.maven.globalSettings":
-		"${workspaceFolder}/.mvn/settings.xml",
+		"${workspaceFolder}/.maven/settings.xml",
 		/*** completion ***/
 		"java.completion.enabled": true,
 		"java.completion.overwrite": true,

@@ -59,8 +59,8 @@
     <!-- database -->
     <repository>
       <id>mongodb</id>
-      <!--url>https://.mvnrepository.com/artifact/org.mongodb/mongo-java-driver</url-->
-      <url>https://.mvnrepository.com/artifact/org.mongodb</url>
+      <!--url>https://.mavenrepository.com/artifact/org.mongodb/mongo-java-driver</url-->
+      <url>https://.mavenrepository.com/artifact/org.mongodb</url>
       <name>repodata</name>
     </repository>
   </repositories>
