@@ -4,6 +4,12 @@
 	[
 		//*/
 		{
+			"name": "environ",
+			"path": "../"
+		},
+		//*/
+		//*/
+		{
 			"name": "minecode",
 			"path": "../../"
 		},
@@ -113,22 +119,11 @@
 		"./bin/",
 		"java.project.sourcePaths":
 		[
-			"./src/jav/",
+			"./src/",
 		],
 		"java.project.referencedLibraries":
 		[
-			/* lanaguage */
-			"bin/dependency/**/junit-4.10.jar",
-			"bin/dependency/**/slf4j-api-1.7.6.jar",
-			/* database */
-			"bin/dependency/**/bson.jar",
-			"bin/dependency/**/mongodb-driver-3.2.2.jar",
-			"bin/dependency/**/mongodb-driver-core-3.2.2.jar",
-			/* minecraft */
-			"bin/dependency/**/adventure-api-4.7.0.jar",
-			"bin/dependency/**/adventure-key-4.7.0.jar",
-			"bin/dependency/**/paper-api-1.16.5-R0.1-SNAPSHOT.jar",
-			"bin/dependency/**/bungeecord-chat-1.16-R0.4.jar",
+			"./lib/**/**.jar"
 		],
 		"java.project.resourceFilters": [ "node_modules", ".git" ],
 		/*** configuration ***/

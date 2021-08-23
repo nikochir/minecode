@@ -30,7 +30,7 @@
             "mainClass": "main.minecode.TestMain",
             "classPaths": [ "$Auto" ],
             "console": "internalConsole",
-            "cwd": "${workspaceFolder}",
+            "cwd": "${workspaceFolder:minecode}",
             "sourcePaths": [ "./src/test/" ],
             "presentation":
             {
